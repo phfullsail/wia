@@ -1,0 +1,33 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.container {
+	margin-left: 30px;
+}
+
+.gold {
+	color:#daa520;
+}
+
+.regular {
+	color: #fff;
+}
+	
+
+.left {
+	float: left;
+}
+
+.clear {
+	clear: both;
+}
+
+.reveal a:hover img{
+	box-shadow: none;
+	background: none;
+}
+
+.reference-link {
+	margin-top: 20px;
+}
+

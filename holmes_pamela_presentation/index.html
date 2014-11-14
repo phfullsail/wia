@@ -1,0 +1,304 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+
+		<title>Adipoli Presentation</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/styles/sunburst.css">
+        <link rel="stylesheet" href="css/styles.css">
+      
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+ 
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				
+                <section data-background="#003366">
+                	<h2>Adipoli</h2>
+                </section>
+        		
+              <section data-background="#003366">
+                	<section>
+                    	<h2>What is Adipoli?</h2>
+                    </section>
+                    <section>
+                    	<h3><span class="gold">Adipoli</span> is a jquery plugin for creating image hover effects.</h3>
+                    </section>
+                    <section>
+                    	<h3>There are more than <span class="gold">15 different hover effects</span> that can be applied to images.</h3>
+                    </section>
+                    <section>
+                    	<h3>In addition to hover effects there are many other image styles available in this plugin.</h3>
+                    </section>
+                </section>
+                <section data-background="#003366">
+                	<section>
+                    	<h2>Why Adipoli?</h2>
+                        <ol>
+                        	<li class="fragment">Impressive image hover effects.</li>
+                            <li class="fragment">Easy to implement.</li>
+                        </ol>    
+                    </section>
+                </section>
+                <section data-background="#003366">
+                	<section>
+                        <h2>What is needed to get started?</h2>
+                     </section>
+                     <section>
+                     	  <div>
+                        	<h3>Download Adipoli</h3>
+                           <a href="https://cube3x.com/adipoli-jquery-image-hover-plugin/" target="_blank" class="regular">https://cube3x.com/adipoli-jquery-image-hover-plugin/</a>
+                         </div>
+                     </section>
+                     <section>
+                        <div>
+                        	<h3>Link to adipoli css in the head</h3>
+                            &lt;link href="css/adipoli.css" rel="stylesheet" type="text/css"/&gt;
+                         </div>
+                     </section> 
+                     <section>       
+                        <div> 
+                        	<h3>Include the lastest jquery script in the head tag</h3>
+                           &lt;script src="includes/jquery-1.9.1.js" type="text/javascript"&gt;&lt;/script&gt;
+                        </div>
+                    </section>
+                    <section>  
+                        <div>
+                        	<h3>Include adipoli script in the head tag</h3>
+                            &lt;script src="js/jquery.adipoli.min.js" type="text/javascript"&gt;&lt;/script&gt;
+                        </div>
+                    </section>
+                </section>
+                <section>
+                	<section data-background="#003366">
+                    	<h3>Start Effects</h3>
+                        <ol>
+                        	<li class="fragment"><a href="popout.html" target="_blank">transparent</a></li>
+                            <li class="fragment"><a href="fold.html" target="_blank">grayscale</a></li>
+                            <li class="fragment"><a href="box_rain.html" target="_blank">overlay</a></li>
+                        </ol>
+                    </section>
+                	<section data-background="#003366">
+                    	<h3>Some of the Hover Effects</h3>
+                        <ol>
+                        	<li class="fragment"><a href="slice_down.html" target="_blank">sliceDown</a></li>
+                            <li class="fragment"><a href="box_random.html" target="_blank">boxRandom</a></li>
+                            <li class="fragment"><a href="popout.html" target="_blank">popout</a></li>
+                            <li class="fragment"><a href="fold.html" target="_blank">fold</a></li>
+                            <li class="fragment"><a href="box_rain.html" target="_blank">boxRainGrow</a></li>
+                        </ol>
+                    </section>
+                    <section data-background="#003366">
+                    	<h3>Other Image styles</h3>
+                        <ol>
+                        	<li class="fragment"><a href="box_random.html" target="_blank">overlayColor</a></li>
+                            <li class="fragment"><a href="box_random.html" target="_blank">boxCols</a></li>
+                            <li class="fragment"><a href="box_rain.html" target="_blank">overlayText</a></li>
+                         	<li class="fragment"><a href="popout.html" target="_blank">popOutShadow</a></li>
+                            <li class="fragment"><a href="slice_down.html" target="_blank">slices</a></li>
+                        </ol>
+                    </section>
+                   
+                </section>
+    		
+                <section data-background="#003366">
+                	<h2>Code View</h2>
+                    <pre><code>
+&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;title&gt;Adipoli Presentation&lt;/title&gt;
+&lt;meta name=&quot;description&quot; content=&quot;A framework for easily creating beautiful presentations using HTML&quot;&gt;
+&lt;meta name=&quot;author&quot; content=&quot;Hakim El Hattab&quot;&gt;
+&lt;meta name=&quot;apple-mobile-web-app-capable&quot; content=&quot;yes&quot; /&gt;
+&lt;meta name=&quot;apple-mobile-web-app-status-bar-style&quot; content=&quot;black-translucent&quot; /&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;css/reveal.min.css&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;css/theme/default.css&quot; id=&quot;theme&quot;&gt;
+&lt;!-- For syntax highlighting --&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;lib/css/styles/sunburst.css&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;css/styles.css&quot;&gt;
+&lt;!-- If the query includes 'print-pdf', use the PDF print sheet --&gt;
+&lt;script&gt;
+document.write( '&lt;link rel=&quot;stylesheet&quot; href=&quot;css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css&quot; type=&quot;text/css&quot; media=&quot;print&quot;&gt;' );
+&lt;/script&gt;
+&lt;!--[if lt IE 9]&gt;
+&lt;script src=&quot;lib/js/html5shiv.js&quot;&gt;&lt;/script&gt;
+&lt;![endif]--&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class=&quot;reveal&quot;&gt;
+&lt;!-- Any section element inside of this container is displayed as a slide --&gt;
+&lt;div class=&quot;slides&quot;&gt;
+&lt;section&gt;
+&lt;h2&gt;Adipoli&lt;/h2&gt;
+&lt;/section&gt;
+&lt;section&gt;
+&lt;section&gt;
+&lt;h2&gt;What is Adipoli&lt;/h2&gt;
+&lt;/section&gt;
+&lt;section&gt;
+&lt;h3&gt;&lt;span class=&quot;blue&quot;&gt;Adipoli&lt;/span&gt; is a jquery plugin for creating image hover effects.&lt;/h3&gt;
+&lt;/section&gt;
+&lt;section&gt;
+&lt;h3&gt;There are more than &lt;span class=&quot;blue&quot;&gt;15 different hover effects&lt;/span&gt; that can be applied to images.&lt;/h3&gt;
+&lt;/section&gt;
+&lt;section&gt;
+&lt;h3&gt;In addition to hover effects there are many other image styles available in this plugin.&lt;/h3&gt;
+&lt;/section&gt;
+&lt;/section&gt;
+&lt;section&gt;
+&lt;section&gt;
+&lt;h2&gt;What is needed to get started?&lt;/h2&gt;
+&lt;/section&gt;
+&lt;section&gt;
+&lt;div&gt;
+&lt;h3&gt;Link to adipoli css in the head&lt;/h3&gt;
+&amp;lt;link href=&quot;css/adipoli.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;/&amp;gt;
+&lt;/div&gt;
+&lt;/section&gt; 
+&lt;section&gt;       
+&lt;div&gt; 
+&lt;h3&gt;Include the lastest jquery script in the head tag&lt;/h3&gt;
+&amp;lt;script src=&quot;includes/jquery-1.9.1.js&quot; type=&quot;text/javascript&quot;&amp;gt;&amp;lt;/script&amp;gt;
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;section&gt;  
+&lt;div&gt;
+&lt;h3&gt;Include adipoli script in the head tag&lt;/h3&gt;
+&amp;lt;script src=&quot;js/jquery.adipoli.min.js&quot; type=&quot;text/javascript&quot;&amp;gt;&amp;lt;/script&amp;gt;
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;/section&gt;
+&lt;section&gt;
+&lt;section&gt;
+&lt;h3&gt;Start Effects&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li class=&quot;fragment&quot;&gt;&lt;a href=&quot;popout.html&quot; target=&quot;_blank&quot;&gt;transparent&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot;fragment&quot;&gt;&lt;a href=&quot;fold.html&quot; target=&quot;_blank&quot;&gt;grayscale&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot;fragment&quot;&gt;&lt;a href=&quot;box_rain.html&quot; target=&quot;_blank&quot;&gt;overlay&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+&lt;section&gt;
+&lt;h3&gt;Some of the Hover Effects&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li class=&quot;fragment&quot;&gt;&lt;a href=&quot;slice_down.html&quot; target=&quot;_blank&quot;&gt;sliceDown&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot;fragment&quot;&gt;&lt;a href=&quot;box_random.html&quot; target=&quot;_blank&quot;&gt;boxRandom&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot;fragment&quot;&gt;&lt;a href=&quot;popout.html&quot; target=&quot;_blank&quot;&gt;popout&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot;fragment&quot;&gt;&lt;a href=&quot;fold.html&quot; target=&quot;_blank&quot;&gt;fold&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot;fragment&quot;&gt;&lt;a href=&quot;box_rain.html&quot; target=&quot;_blank&quot;&gt;boxRainGrow&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+&lt;section&gt;
+&lt;h3&gt;Other Image styles&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li class=&quot;fragment&quot;&gt;&lt;a href=&quot;box_random.html&quot; target=&quot;_blank&quot;&gt;overlayColor&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot;fragment&quot;&gt;&lt;a href=&quot;box_random.html&quot; target=&quot;_blank&quot;&gt;boxCols&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot;fragment&quot;&gt;&lt;a href=&quot;box_rain.html&quot; target=&quot;_blank&quot;&gt;overlayText&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot;fragment&quot;&gt;&lt;a href=&quot;popout.html&quot; target=&quot;_blank&quot;&gt;popOutShadow&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot;fragment&quot;&gt;&lt;a href=&quot;slice_down.html&quot; target=&quot;_blank&quot;&gt;slices&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+&lt;/section&gt;
+&lt;section&gt;
+&lt;h2&gt;Code View&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/section&gt;	
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script src=&quot;lib/js/head.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;js/reveal.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;js/main.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+controls: true,
+progress: true,
+history: true,
+center: true,
+theme: Reveal.getQueryHash().theme || 'simple', // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+// Optional libraries used to extend on reveal.js
+dependencies: [
+{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+// { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+]
+});
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                		</code></pre>
+                 </section>	
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+        
+		<script src="js/main.js" type="text/javascript"></script>
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme || 'night', // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
