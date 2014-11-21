@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Thanksgiving 2014</title>
+<script src="includes/modernizr.js"></script>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+<link href="css/jquery-ui.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css"  href="css/jquery.fancybox.css" media="screen" />
+<link rel='stylesheet prefetch' href='http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css'>
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/styles.css" media="screen" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Rye' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Nunito:700' rel='stylesheet' type='text/css'>
+ 
+
+</head>
+
+<body>
+<div class="container-main">
+
+      <div class="container-inner bg-main">
+       <input type="submit" class="sound" onClick="toggleSound()" id="soundBtn" value="">
+              <div class="clear"></div>
+              <audio id="audio" autoplay>
+            	<source src="audio/bensound-thelounge.mp3" type="audio/mpeg"/>
+                <source src="audio/bensound-thelounge.oga" type="audio/ogg"/>
+                 
+                Audio is not supported.
+             </audio>
+        <div class="main-header"><h1>Thanksgiving 2014</h1></div>
+        <h3>The Annual Holmes Family Thanksgiving Dinner!</h3>
+          <div class="container-tab center">
+            <div class="tab-bar">
+            
+            <!-- Journey -->
+              <h2 class="tab active">The Journey</h2>
+              <div id="map_container">
+              <!-- journey content -->
+              	<a class="dot" style="top: 410px; left: 746px;" state="NC" city="durham" title="706 miles"></a>
+                <a class="dot" style="top: 500px; left: 660px;" state="FL" city="pensacola" title="Home"></a>
+                <a class="dot" style="top: 480px; left: 685px;" state="AL" city="phenix" title="242 miles"></a>
+                <a class="dot" style="top: 462px; left: 685px;" state="GA" city="atlanta" title="314 miles"></a>
+                
+                <!-- Form -->
+          <!--      <form id="mapForm" name="mapForm" class="form_state" method="post" action="">
+                    <select name="state" id="state">
+                        <option value="NC">North Carolina</option>
+                        <option value="FL">Florida</option>
+                        <option value="GA">Georgia</option>
+                        <option value="AL">Alabama</option>
+                        <option value="ALL" selected="selected">Show all states</option>
+                    </select>
+                </form>-->
+              	<span class="details_container">
+                    <p class="city_details">Click on the pins to see where my family is coming from and how far they will travel.</p>
+                </span>
+                <span>
+                    <!-- alabama -->
+                        <p class="city-details hide-details" id="phenix">
+                            <img class="city_photo" src="img/couple.png" alt="phenix city" width="128" height="128" />
+                            <span class="city-details-text">Parents - Phenix City, AL <br>
+                            <span class="distance"><strong>Distance:</strong> 242 miles</span></span>
+                            
+                        </p>
+                        <span class="clear"></span>
+                        <!-- georia -->
+                        <p class="city-details hide-details" id="atlanta">
+                            <img class="city_photo" src="img/woman.png" alt="atlanta" width="128" height="128" />
+                        
+                        <span class="city-details-text">Family - Atlanta, GA <br>
+                        <span class="distance"><strong>Distance:</strong> 314 miles</span></span>
+                       
+                        </p>
+                     <span class="clear"></span>
+                      
+                       <!-- north carolina -->
+                        <p class="city-details hide-details" id="durham">
+                            <img class="city_photo" src="img/man.png" alt="durham" width="128" height="128" />
+                        
+                        <span class="city-details-text">Family - Durham, NC<br>
+                        <span class="distance"><strong>Distance:</strong> 706 miles</span></span>
+                        
+                        </p>
+                        <span class="clear"></span>
+                         <!-- florida -->
+                        <p class="city-details hide-details" id="pensacola">
+                            <img class="city_photo" src="img/couple.png" alt="pensacola" width="128" height="128" />
+                        
+                        <span class="city-details-text">Home - Pensacola, FL (Some family will also be traveling locally)<br>
+                        <span class="distance"><strong>The madhouse where the overindulgence happens...</strong><br>
+                        <span>(Some family will also be traveling from the local area)</span></span>
+                        </span>
+                        
+                        </p>
+                 	</span>       
+                <span class="clear"></span>
+              </div>
+             <!-- end Journey -->
+             
+             <!-- the chart -->
+             <h2 class="tab" id="tabMenu">The Distance</h2>
+              <div id="divChart">
+              <span>This chart shows the distance my family will travel in order to partake in the feast.</span>
+              
+              <canvas id="travelChart" width="600" height="400"></canvas>
+
+              
+              </div>
+             
+              
+              <!-- Menu -->
+              <h2 class="tab" id="tabMenu">The Menu</h2>
+              <div id="divMenu">
+              	<h3 id="titleMenu">What's on the Menu?</h3>
+             <!--     <canvas id="canvas1" width="720" height="60">
+    				<p>Canvas is not supported</p>
+    			</canvas>-->
+             <p id="buttonsMenu">
+               <button class="btn btn-default" id="btnsuccess" data-anijs="if:click, do: hinge animated, to: #titleMenu">Just for Fun</button>
+               
+               <button class="btn btn-success" id="btnMeats">Meats</button>
+               <button class="btn btn-success" id="btnSides">Side Dishes</button>
+               <button class="btn btn-success" id="btnDesserts">Desserts</button>
+               </p>
+               
+				<span id="menuMeats" class="menu left"> 
+                	<h4>The Meats</h4>
+					<ul >
+                        <li>Whole Roasted Pig</li>
+                        <li>Fried Turkey</li>
+                        <li>Hog Mauls</li>
+                	</ul>
+				</span>
+                <span id="menuSides" class="menu left"> 
+                	<h4>The Side Dishes</h4>
+                    <ul>
+                   		<li>Mac & Cheese</li>
+                        <li>Collard Greens</li>
+                        <li>Rice</li>
+                        <li>Giblet Gravy</li>
+                        <li>Monkey Break</li>
+                        <li>Cranberry Sauce</li>
+                        <li>Roasted Corn</li>
+                        <li>Lima Beans & Okra
+                   </ul>
+                </span>
+                 <span id="menuDesserts" class="menu left"> 
+                	<h4>The Deserts</h4>
+                    <ul>
+                   		<li>Red Velvet Cake</li>
+                        <li>Chocolate Cake</li>
+                        <li>Mini Pecan Pies</li>
+                        <li>Sweet Potato Cobbler</li>
+                 </ul>
+                </span>
+              </div>
+              
+              <!-- end Menu -->
+              
+              <!-- Gallery -->
+              <h2 class="tab">The Gallery</h2>
+              
+             <div id="divGallery">
+             <h3>Memories of Feasts Past</h3>
+                
+            <span class="img-row">
+                <a class="fancybox" rel="group1" href="img/cranberries.jpg" title="Homemade Cranberry Sauce">
+       				<img src="img/_thumbcranberries.jpg" alt="Image 1" width="250" height="175" class="img-thumbnail">
+       			</a>
+                  <a class="fancybox" rel="group1" href="img/turkey_dinner.jpg" title="Roasted Turkey">
+       				<img src="img/_thumbturkey_dinner.jpg" alt="Image 1" width="250" height="175" class="img-thumbnail">
+       			</a>
+				<a class="fancybox" rel="group1" href="img/sandwich.jpg" title="Awesome Leftovers">
+       				<img src="img/_thumbsandwich.jpg" alt="Image 1" width="250" height="175" class="img-thumbnail">
+       			</a>
+              </span>
+              <span class="img-row">  
+               <a class="fancybox" rel="group1" href="img/dinner_plate.jpg" title="Dinner Plate">
+       				<img src="img/_thumbdinner_plate.jpg" alt="Image 1" width="250" height="175" class="img-thumbnail">
+       			</a>
+                  <a class="fancybox" rel="group1" href="img/dressing.jpg" title="Momma's Dressing">
+       				<img src="img/_thumbdressing.jpg" alt="Image 1" width="250" height="175" class="img-thumbnail">
+       			</a>
+				<a class="fancybox" rel="group1" href="img/desserts.jpg" title="Desserts">
+       				<img src="img/_thumbdesserts.jpg" alt="Image 1" width="250" height="175" class="img-thumbnail">
+       			</a>
+               </span>
+               
+        
+            </div>
+            <!-- end Gallery -->
+    
+          	  <!-- The AniJS definition -->
+              <input type="hidden" 
+                   data-anijs="if: mousedown, on: .tab, do: $removeClass active, to: .tab.active;
+                               if: mousedown, on: .tab, do: $addClass active, to: target;
+                               if: mousedown, on: .tab, do: rubberBand animated, to: $closest target"
+              >
+              <!-- end AniJS definition -->
+            </div> 
+             
+          </div>
+         <div id="footer">
+         
+          <a href="http://www.bensound.com/royalty-free-music/jazz#">Music: http://www.bensound.com</a><br>
+          <span>Pamela Holmes Copyright &copy; 2014 </span>
+         </div>
+    </div>
+</div>
+
+<script src="includes/jquery-1.11.1.min.js"></script>
+<script src="includes/jquery-ui.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="includes/Chart.js"></script>
+<script src="includes/jquery.fancybox.js"></script>
+<script src="includes/anijs-min.js"></script>
+<script src="includes/helpers/dom/anijs-helper-dom.js"></script>
+<script type="text/javascript" src="js/project.js"></script>
+</body>
+</html>
